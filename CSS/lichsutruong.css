@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor:  #375E97;
+}
+body{
+    margin:0;
+    position:absolute;
+    top: 100px;
+    top:50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../image/school-history.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    font-weight:500;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color:var(--maincolor);
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+ul.menu{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    background-color: transparent;
+}
+nav > ul{
+    justify-content:center;
+    font-size: 15px;
+}
+nav > ul.menu > li > a{
+    display:block;
+    color: rgb(45, 46, 47);
+    padding: 0.5rem 2rem;
+    justify-content:center;
+    text-transform: uppercase;
+    position:relative;
+    font-weight: bold;
+}
+ul.menu > li > a.active{
+    background-color:rgb(63, 63, 228);
+    color: aliceblue;
+}
+h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px gray;
+}
+section{
+    position: relative;
+}
+.box{
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.582);
+    color: white;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 10px; 
+    animation: captionText 2s ease forwards;
+}
+@keyframes captionText {
+    0%{
+        opacity:0;
+        transform: translate(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    } 
+}
+.box img{
+    width: 100%;
+}
+footer{
+    background-color: var(--maincolor);
+    color: white;
+    height: 500px;
+    justify-content: center;
+}
+footer > div {
+    width:32%;
+}
+footer >div:first-child{
+    margin: auto 2px;
+}
+footer a{
+    color: white;
+    margin: 5px;
+    padding: 5px 0px;
+}
+.location > a{
+    display:block;
+}
+div.location a:hover{
+    color:#FFBB00;
+}
+ul.list-social-media{
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 0px;
+    display: flex;
+}
+ul.list-social-media > li{
+    margin : 0px 5px;
+}
+ul.list-social-media > li > a{
+    color:white ;
+    text-align: center;
+    width:50px;
+    height: 50px;
+    background-color: var(--maincolor);
+    font-size: 20px;
+    display: block;
+}
+ul.list-social-media > li > a > i{
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    transition: all 0.3s ease-in-out; 
+}
+ul.list-social-media > li > a.youtube:hover{
+    background:#CD201F;
+}
+ul.list-social-media > li > a.facebook:hover{
+    background: #1877F2;
+}
+ul.list-social-media > li > a > i:nth-child(2){
+  opacity: 0;
+}
+ul.list-social-media > li > a:hover > i:nth-child(1){
+    color: var(--maincolor);
+    transform: translateY(-50px);
+}
+ul.list-social-media > li > a:hover > i:nth-child(2){
+    transform: translateY(-50px);
+    opacity: 1;
+}
+footer h2{
+    position: relative;
+    padding: 15px 0px;
+    margin-bottom: 1px;
+}
+footer h2::after{
+    content:"";
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    background-color: white;
+    bottom: 0px;
+    left: 0px;
+}
+.slogan{
+    text-shadow:2px 1px #0a2753c0;
+}
+footer span{
+    font-weight: bold;
+    color:#ffcb3d;
+}
+footer + div{
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+}
+div#backtop{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color:#e15f41;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 45px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 110;
+    border-radius: 10px;
+}
